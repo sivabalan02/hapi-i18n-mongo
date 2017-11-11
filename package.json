@@ -1,0 +1,86 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "hapi-i18n-mongo",
+        "scope": null,
+        "escapedName": "hapi-i18n-mongo",
+        "name": "hapi-i18n-mongo",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "D:\\projects\\node.js\\opensource\\hapi-i18n-mongo"
+    ]
+  ],
+  "_from": "hapi-i18n-mongo@latest",
+  "_id": "hapi-i18n-mongo@0.1.5",
+  "_inCache": true,
+  "_location": "/hapi-i18n-mongo",
+  "_nodeVersion": "8.0.0",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/hapi-i18n-mongo-0.1.5.tgz_1510301334707_0.6780135792214423"
+  },
+  "_npmUser": {
+    "name": "sivabalan",
+    "email": "sivakumar750@gmail.com"
+  },
+  "_npmVersion": "5.0.0",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "hapi-i18n-mongo",
+    "scope": null,
+    "escapedName": "hapi-i18n-mongo",
+    "name": "hapi-i18n-mongo",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/hapi-i18n-mongo/-/hapi-i18n-mongo-0.1.5.tgz",
+  "_shasum": "128ddc648e7b313d285ecdf466d55056f18a87f5",
+  "_shrinkwrap": null,
+  "_spec": "hapi-i18n-mongo",
+  "_where": "D:\\projects\\node.js\\opensource\\hapi-i18n-mongo",
+  "author": {
+    "name": "Sivabalan"
+  },
+  "dependencies": {
+    "lodash": "^3.5.0",
+    "mongodb": "^2.2.33"
+  },
+  "description": "Translation module for hapi",
+  "devDependencies": {
+    "hapi": "^8.4.0"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "dist": {
+    "integrity": "sha512-kQBlonY2CeJ2ZC4fH9qiVML093xrrssTI4Sh6AkTWWhSsbgzW/MwkBs/4TKnhE8oy/VNYMpbUViPehK6xScZ4A==",
+    "shasum": "128ddc648e7b313d285ecdf466d55056f18a87f5",
+    "tarball": "https://registry.npmjs.org/hapi-i18n-mongo/-/hapi-i18n-mongo-0.1.5.tgz"
+  },
+  "keywords": [
+    "hapi",
+    "translation",
+    "nodejs",
+    "mongodb"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "name": "sivabalan",
+      "email": "sivakumar750@gmail.com"
+    }
+  ],
+  "name": "hapi-i18n-mongo",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "scripts": {},
+  "version": "0.1.5"
+}
