@@ -53,7 +53,7 @@ server.ext('onRequest', function(request, reply){
 });
 ```
 
-##Collection Schema
+## Collection Schema
 
 MongoDB schema have to be like this
 ```
