@@ -78,9 +78,14 @@
       "email": "sivakumar750@gmail.com"
     }
   ],
+  "homepage": "https://github.com/sivabalan02/hapi-i18n-mongo",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sivabalan02/hapi-i18n-mongo.git"
+},
   "name": "hapi-i18n-mongo",
   "optionalDependencies": {},
-  "readme": "ERROR: No README data found!",
+  "readme": "README.md",
   "scripts": {},
-  "version": "0.1.5"
+  "version": "1.0.3"
 }

@@ -1,6 +1,6 @@
 const mongoClient = require('mongodb').MongoClient;
 var configuration = {};
-var _db = '';
+var _db           = '';
 
 module.exports = {
 	setConfiguration: function(config){

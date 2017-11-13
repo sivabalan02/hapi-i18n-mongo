@@ -27,7 +27,7 @@ JavaScript example:
 ```js
 server.register(
     {
-        register: require( "hapi-i18n" ),
+        register: require( "hapi-i18n-mongo" ),
         options : {
         db      : {
             host      : 'localhost',
@@ -51,4 +51,19 @@ server.ext('onRequest', function(request, reply){
         return reply.continue();
     })
 });
+```
+
+##Collection Schema
+
+MongoDB schema have to be like this
+```
+{
+    key: 'translation_key',
+    language: [
+        {
+            code: 'language_code',
+            translation: 'translated key'
+        }
+    ]
+}
 ```
