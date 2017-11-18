@@ -53,6 +53,12 @@ server.ext('onRequest', function(request, reply){
 });
 ```
 
+## Get locale
+
+```js
+request.i18n.getLocale();
+```
+
 ## Collection Schema
 
 MongoDB schema have to be like this

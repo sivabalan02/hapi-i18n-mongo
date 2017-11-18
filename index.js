@@ -35,6 +35,10 @@ exports.setLocale = function(selected_locale, callback){
         });
 }
 
+exports.getLocale = function(){
+    return locale;
+}
+
 exports.__ = function(key) {
     let message = _.find(messages, {key: key });
     if(message)
