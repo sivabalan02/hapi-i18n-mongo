@@ -14,8 +14,8 @@ JavaScript example:
 {
   path: '/path',
   method: 'GET',
-  handler: function ( request, reply ){
-    return reply({
+  handler: function ( request, h ){
+    return h.response({
       message: request.i18n.__( "My localized string" )
     });
   })
@@ -33,6 +33,8 @@ server.register(
             host      : 'localhost',
             port      : 27017,
             db        : 'admin',
+            username  : '',
+            password  : '',
             collection: 'api_translation'
             }
         }
@@ -45,11 +47,16 @@ server.register(
 To set the locale have to use the `Accept-Language` header. If the header was not set, english will be taken as default locale
 
 ```js
-server.ext('onRequest', function(request, reply){
-    locale = request.headers['Accept-Language'] ? request.headers['Accept-Language']: "en";
-    request.i18n.setLocale(locale, function(){
-        return reply.continue();
-    })
+const i18n = require('hapi-i18n-mongo');
+server.ext({
+    type  : 'onRequest', 
+    method: function(request, h){
+        request.i18n = i18n;
+        locale = request.headers['Accept-Language'] ? request.headers['Accept-Language']: "en";
+        request.i18n.setLocale(locale, function(){
+            return h.continue();
+        })
+    }
 });
 ```
 
