@@ -53,9 +53,8 @@ server.ext({
     method: function(request, h){
         request.i18n = i18n;
         locale = request.headers['Accept-Language'] ? request.headers['Accept-Language']: "en";
-        request.i18n.setLocale(locale, function(){
-            return h.continue();
-        })
+        request.i18n.setLocale(locale);
+        return h.continue();
     }
 });
 ```
